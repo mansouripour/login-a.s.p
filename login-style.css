@@ -1,0 +1,173 @@
+body {
+    font-family: sans-serif;
+    background-color:rgb(8, 66, 80);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 14px;
+  }
+  .box {
+    max-width: 500px;
+    width: 700%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 240, 245);
+    border: 1px solid rgb(173, 191, 196);
+    border-radius: 3px;
+    margin: 0 0 8px;
+    padding: 70px 0;
+    flex-grow: 1;
+  }
+  .home {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+  }
+  .back-home {
+    margin: 0.5rem;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(90, 125, 133);
+    font-weight: 600;
+    background: transparent;
+  }
+  .heading {
+    margin: 22px auto 12px;
+    /*<a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/login_z2ny.jpg" border="0" alt="آپلود عکس" /></a>
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/borje-tehran2_200011_juhv.jpg" border="0" alt="آپلود عکس" /></a>
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/borje-tehran2_20021_fza7.jpg" border="0" alt="آپلود عکس" /></a>
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/borje-tehran2_20031_t8af.jpg" border="0" alt="آپلود عکس" /></a>11
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/1borje-tehran1_2000_b24s.jpg" border="0" alt="آپلود عکس" /></a>
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/1borje-tehran1_2000_boo.jpg" border="0" alt="آپلود عکس" /></a>
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/untitled-2_hxz.png" border="0" alt="آپلود عکس" /></a>
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/untitled-3_ceiq.png" border="0" alt="آپلود عکس" /></a>
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/untitled-3_100k.png" border="0" alt="آپلود عکس" /></a>
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/untitled-3_3r1e.png" border="0" alt="آپلود عکس" /></a>
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/untitled-4_hr4t.png" border="0" alt="آپلود عکس" /></a>
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/untitled-5_6i2m.png" border="0" alt="آپلود عکس" /></a>
+    <a href="https://uupload.ir/" target="_blank"><img src="https://s6.uupload.ir/files/untitled-5_ykny.png" border="0" alt="آپلود عکس" /></a>*/
+    background-image: url(https://s6.uupload.ir/files/untitled-5_ykny.png);
+    background-position: -98px 100;
+    height: 205px;
+    width: 279px;
+    overflow: hidden;
+  }
+  .field {
+    margin: 10px 0;
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+    text-overflow: ellipsis;
+  }
+  input {
+    padding: 9px 0px 7px 9px;
+    font-size: 12px;
+    width: 16rem;
+    height: 1.2rem;
+    outline: none;
+    background: rgb(228, 243, 247);
+    border-radius: 3px;
+    border: 1px solid rgb(175, 220, 233);
+  }
+  /* label intial position*/
+  label {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    
+    padding-bottom: 15px;
+    transform: translateY(10px);
+    line-height: 6px;
+    transition: all ease-out 0.1s;
+    font-size: 14px;
+    color: rgb(90, 125, 133);
+    padding-top: 6px;
+  }
+  /* hiding placeholder in all browsers */
+  input::placeholder {
+    visibility: hidden;
+  }
+  /* hiding  placeholder in mozilla */
+  .login-form ::-moz-placeholder {
+    color: transparent;
+  }
+  /* label final position */
+  input:not(:placeholder-shown) + label {
+    transform: translateY(0);
+    font-size: 11px;
+  }
+  /* input padding increases if placeholder is not shown */
+  input:not(:placeholder-shown) {
+    padding-top: 14px;
+    padding-bottom: 2px;
+  }
+  .login-button {
+    text-align: center;
+    width: 100%;
+    
+    padding: 10px;
+    border: 2px solid transparent;
+    background-color: rgb(8, 66, 80);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(8, 66, 80);
+    margin-top: 6px;
+  }
+  .separator .line {
+    height: 1px;
+    width: 40%;
+    background-color: rgb(175, 220, 233);
+  }
+  .other {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ggl-login {
+    margin: 0.5rem;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #3897f0;
+    font-weight: 600;
+    background: transparent;
+  }
+  .ggl-icon {
+    color: #385185;
+    font-size: 1rem;
+    padding-right: 1px;
+    
+  }
+  .forgot-password {
+    font-size: 12px;
+    color: #003569;
+  }
+  .signup {
+    color: #3897f0;
+    font-weight: 600;
+  }
+  
